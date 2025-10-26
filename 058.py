@@ -8,12 +8,13 @@ while not acertou:
     if n_jogador == computador:
         print("Acertou")
         tentativa =+1
-    elif n_jogador > computador:
-        print("Mais.. Tente de novo")
-        tentativa = +1
-    elif n_jogador < computador:
-        print("Menos... Tente denovo")
-        tentativa = +1
     else:
-        print("Erro")
-    print("Você acertou com {} tentativas".format(tentativa))
+        if n_jogador > computador:
+            print("Mais.. Tente de novo")
+            tentativa = +1
+        elif n_jogador < computador:
+            print("Menos... Tente denovo")
+            tentativa = +1
+        else:
+            print("Erro")
+            print("Você acertou com {} tentativas".format(tentativa))
